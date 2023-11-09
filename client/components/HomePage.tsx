@@ -1,12 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import todaysWeather from './FrogPage'
+import todaysWeather from './Wellington'
 
-function HomePage() {
-  return (
-    <>
-    </>
-  )
+export default function HomePage() {
+  return <></>
 }
-
-export default HomePage
