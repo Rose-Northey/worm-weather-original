@@ -1,17 +1,33 @@
-import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Weather } from '../models/Weather'
+import { getWeather } from '../apiClient'
 
-export default function FrogPage() {
-  const { name } = useParams()
+export default function TodaysWeather() {
+  const [weather, setWeather] = useState([] as Weather[])
 
-  if (!name) {
-    throw new Error('Missing param "name"')
+  useEffect(() => {
+    async function updateWeather() {
+      const weatherData = await getWeather()
+      setWeather(weatherData)
+      console.log(weatherData[0])
+    }
+    updateWeather()
+  }, [])
+
+  if (weather.length == 0) {
+    return <>worm</>
   }
+
+  const thing = weather[0]
+  console.log(thing)
+  const focus = thing.hourly.soil_moisture_3_to_9cm
 
   return (
     <>
-      <p>
-        It&apos;s impossible to have a frog named {name}, the laws forbid it
-      </p>
+      <pre>{JSON.stringify(focus, null, 2)}</pre>
+      {/* {weather.map((today) => (
+        <li key={today.HourlyUnits.time}></li>
+      ))} */}
     </>
   )
 }

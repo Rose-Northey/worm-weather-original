@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { getGreeting } from '../apiClient.ts'
 import { Link } from 'react-router-dom'
+import todaysWeather from './FrogPage'
 
 function HomePage() {
   const [greeting, setGreeting] = useState('')
