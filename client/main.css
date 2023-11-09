@@ -1,0 +1,26 @@
+.grid-container {
+  display:grid;
+  grid-template-areas: 
+  'left left header header right right'
+  'left left  main main right  right'
+  'left left  footer footer right right ';
+}
+body{
+  background-image:url("./Media/wormybackground.jpg");
+  background-size: 100%
+}
+
+.header {
+  grid-area:header;
+  border:solid palevioletred;
+  position:fixed;
+  
+  background-color: pink;
+
+}
+footer {
+  grid-area:footer ;
+}
+/* main {
+  
+} */
