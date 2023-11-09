@@ -1,26 +1,38 @@
-.grid-container {
-  display:grid;
-  grid-template-areas: 
-  'left left header header right right'
-  'left left  main main right  right'
-  'left left  footer footer right right ';
-}
 body{
   background-image:url("./Media/wormybackground.jpg");
   background-size: 100%
 }
 
-.header {
-  grid-area:header;
-  border:solid palevioletred;
-  position:fixed;
-  
+header {
+  width: 76%;
+  margin-right: 12%;
+  margin-left: 12%;
+  border: solid palevioletred;
   background-color: pink;
+  text-align: center;
+  margin-bottom: 1%;
 
 }
-footer {
-  grid-area:footer ;
+
+.main-wrapper{
+  width: 76%;
+  margin-right: 12%;
+  margin-left: 12%;
+  border:solid palevioletred;
+  background-color: pink;
+  height:fit-content;
+  text-align: center;
 }
+footer {
+  width: 76%;
+  margin-right: 12%;
+  margin-left: 12%;
+  margin-top:1% ;
+  text-align: center;
+  border: solid palevioletred;
+  background-color: pink;
+}
+
 /* main {
   
 } */
@@ -34,3 +46,4 @@ table, tr, td {
   border-color: rgb(68, 30, 7);
   font-family: inherit;
 }
+
