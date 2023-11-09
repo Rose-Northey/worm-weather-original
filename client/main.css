@@ -32,3 +32,18 @@ footer {
   border: solid palevioletred;
   background-color: pink;
 }
+
+/* main {
+  
+} */
+
+
+/* //Tables */
+table, tr, td {
+  background: rgb(190, 115, 53);
+  border: solid 1px;
+  border-radius: 3px;
+  border-color: rgb(68, 30, 7);
+  font-family: inherit;
+}
+
