@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <>
-      <div className="header">
-        <h1>Weather 4 Worms</h1>
-      </div>
+      <h1>Weather 4 Worms</h1>
     </>
   )
 }

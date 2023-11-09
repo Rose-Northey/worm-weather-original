@@ -1,18 +1,20 @@
 import { Outlet } from 'react-router-dom'
 import Header from './HeaderComp'
+import PageBio from './PageBio'
 
 export default function Layout() {
   return (
     <>
-      <div className="grid-container">
-        <header>
-          <Header />
-        </header>
-        <main>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <div className="main-wrapper">
+          <PageBio />
           <Outlet />
-        </main>
-        <footer>Copyright &copy; 2038</footer>
-      </div>
+        </div>
+      </main>
+      <footer>Copyright &copy; 2038</footer>
     </>
   )
 }
