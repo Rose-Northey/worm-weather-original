@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Weather } from '../models/Weather'
 import { getWeather } from '../apiClient'
 import SoilStack from './SoilStack'
+import interpretMoisture from '../function'
 
 export default function WellingtonWeather() {
   const [weather, setWeather] = useState([] as Weather[])
@@ -50,11 +51,13 @@ export default function WellingtonWeather() {
   return (
     <>
       <div>
+        <h4> Weather Report for Wellington: </h4>
         <table>
           <tr>
             <th>Depth</th>
             <th>Temperature</th>
             <th>Moisture</th>
+            <th>Description</th>
           </tr>
           <tr>
             <td>Shallow</td>
@@ -63,6 +66,9 @@ export default function WellingtonWeather() {
             </td>
             <td>
               <b>{wellywetnessShallow}</b>m³/m³
+            </td>
+            <td>
+              <b>{interpretMoisture(wellywetnessShallow).words}</b>
             </td>
           </tr>
           <tr>
@@ -73,6 +79,9 @@ export default function WellingtonWeather() {
             <td>
               <b>{wellywetnessMid}</b>m³/m³
             </td>
+            <td>
+              <b>{interpretMoisture(wellywetnessMid).words}</b>
+            </td>
           </tr>
           <tr>
             <td>Deep</td>
@@ -81,6 +90,9 @@ export default function WellingtonWeather() {
             </td>
             <td>
               <b>{wellywetnessDeep}</b>m³/m³
+            </td>
+            <td>
+              <b>{interpretMoisture(wellywetnessDeep).words}</b>
             </td>
           </tr>
         </table>
