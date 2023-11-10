@@ -9,11 +9,11 @@ function PageBio() {
         <h3>About W4W</h3>
         <p>
           {' '}
-          Weather for Worms is blah blah blah filler text blah blah blah filler
-          text blah blah blah filler text blah blah blah filler text blah blah
-          blah filler text blah blah blah filler text blah blah blah filler text
-          blah blah blah filler text blah blah blah filler text blah blah blah
-          filler text someone write in me
+
+          Welcome to Weather for Worms! The wiggliest Weather Website you've
+          ever witnessed, willing to Wow by spreading the wonderfully wacky
+          weather word to your worm workplace.
+
         </p>
       </div>
     </>

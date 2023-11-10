@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Weather } from '../models/Weather'
 import { getWeather } from '../apiClient'
+import SoilStack from './SoilStack'
 
 export default function CanberraWeather() {
   const [weather, setWeather] = useState([] as Weather[])
@@ -18,8 +19,7 @@ export default function CanberraWeather() {
     return <>worm</>
   }
 
-
-  const canberra = weather[0].hourly
+  const canberra = weather[1].hourly
   console.log(canberra)
 
   const canberraTime = canberra.time[12]
@@ -58,21 +58,38 @@ export default function CanberraWeather() {
           </tr>
           <tr>
             <td>Shallow</td>
-            <td><b>{canberratempShallow}</b>c</td>
-            <td><b>{canberrawetnessShallow}</b>m³/m³</td>
+            <td>
+              <b>{canberratempShallow}</b>c
+            </td>
+            <td>
+              <b>{canberrawetnessShallow}</b>m³/m³
+            </td>
           </tr>
           <tr>
             <td>Middle</td>
-            <td><b>{canberratempMid}</b>c</td>
-            <td><b>{canberrawetnessMid}</b>m³/m³</td>
+            <td>
+              <b>{canberratempMid}</b>c
+            </td>
+            <td>
+              <b>{canberrawetnessMid}</b>m³/m³
+            </td>
           </tr>
           <tr>
             <td>Deep</td>
-            <td><b>{canberratempDeep}</b>c</td>
-            <td><b>{canberrawetnessDeep}</b>m³/m³</td>
+            <td>
+              <b>{canberratempDeep}</b>c
+            </td>
+            <td>
+              <b>{canberrawetnessDeep}</b>m³/m³
+            </td>
           </tr>
         </table>
       </div>
+      {SoilStack(
+        canberrawetnessShallow,
+        canberrawetnessMid,
+        canberrawetnessDeep
+      )}
     </>
   )
 }
