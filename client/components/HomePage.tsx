@@ -8,16 +8,7 @@ export default function HomePage() {
       <div className="home">
         <p>
           {' '}
-          Weather for Worms is blah blah blah filler text blah blah blah filler
-          text blah blah blah filler text blah blah blah filler text blah blah
-          blah filler text blah blah blah filler text blah blah blah filler text
-          blah blah blah filler text blah blah blah filler text blah blah blah
-          filler text someone write in me blah blah blah filler text blah blah
-          blah filler text blah blah blah filler text blah blah blah filler text
-          blah blah blah filler text blah blah blah filler text blah blah blah
-          filler text blah blah blah filler text blah blah blah filler text blah
-          blah blah filler text blah blah blah filler text blah blah blah filler
-          text
+          
         </p>
       </div>
     </>
