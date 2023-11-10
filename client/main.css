@@ -1,26 +1,50 @@
+
+
+
 body{
   background-image:url("./Media/wormybackground.jpg");
   background-size: 100%
+}
+
+h1 {
+
+
 }
 
 header {
   width: 76%;
   margin-right: 12%;
   margin-left: 12%;
-  border: solid palevioletred;
+  border:solid 5px palevioletred;
+  border-radius: 30px;
   background-color: pink;
   text-align: center;
   margin-bottom: 1%;
 
 }
 
+.cityButton{
+  width: 180px;
+  border-radius: 90px;
+  background-color: transparent;
+  border: solid 5px palevioletred;
+  margin: 15px;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+}
+
 .main-wrapper{
   width: 76%;
+  height: fit-content;
   margin-right: 12%;
   margin-left: 12%;
-  border:solid palevioletred;
+
+  border:solid 10px palevioletred;
+  border-radius: 30px;
   background-color: pink;
-  height:fit-content;
   text-align: center;
 }
 footer {
@@ -33,18 +57,22 @@ footer {
   background-color: pink;
 }
 
-/* main {
-  
-} */
+main {
+
+}
 
 
 /* //Tables */
 table, tr, td {
-  background: rgb(190, 115, 53);
+  background: rgb(247, 172, 230);
   border: solid 1px;
   border-radius: 3px;
   border-color: rgb(68, 30, 7);
   font-family: inherit;
+  width: 50%;
+  margin-left:25%;
+  margin-bottom:1% ;
+  
 }
 
 .soil{
