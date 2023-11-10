@@ -31,6 +31,7 @@ export default function NarniaWeather() {
     <>
       <div>
         <h4> Weather Report for Narnia: </h4>
+        {SoilStack(narniawetnessShallow, narniawetnessMid, narniawetnessDeep)}
         <table>
           <tr>
             <th>Depth</th>
@@ -76,7 +77,6 @@ export default function NarniaWeather() {
           </tr>
         </table>
       </div>
-      {SoilStack(narniawetnessShallow, narniawetnessMid, narniawetnessDeep)}
     </>
   )
 }

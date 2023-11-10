@@ -52,6 +52,11 @@ export default function CanberraWeather() {
     <>
       <div>
         <h4> Weather Report for Canberra: </h4>
+        {SoilStack(
+          canberrawetnessShallow,
+          canberrawetnessMid,
+          canberrawetnessDeep
+        )}
         <table>
           <tr>
             <th>Depth</th>
@@ -97,11 +102,6 @@ export default function CanberraWeather() {
           </tr>
         </table>
       </div>
-      {SoilStack(
-        canberrawetnessShallow,
-        canberrawetnessMid,
-        canberrawetnessDeep
-      )}
     </>
   )
 }

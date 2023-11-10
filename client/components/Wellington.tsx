@@ -52,6 +52,7 @@ export default function WellingtonWeather() {
     <>
       <div>
         <h4> Weather Report for Wellington: </h4>
+        {SoilStack(wellywetnessShallow, wellywetnessMid, wellywetnessDeep)}
         <table>
           <tr>
             <th>Depth</th>
@@ -97,7 +98,6 @@ export default function WellingtonWeather() {
           </tr>
         </table>
       </div>
-      {SoilStack(wellywetnessShallow, wellywetnessMid, wellywetnessDeep)}
     </>
   )
 }

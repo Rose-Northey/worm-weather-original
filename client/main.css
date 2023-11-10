@@ -12,9 +12,7 @@ header {
   width: 76%;
   margin-right: 12%;
   margin-left: 12%;
-  border:solid 5px palevioletred;
-  border-radius: 30px;
-  background-color: pink ;
+
   text-align: center;
   margin-bottom: 1%;
 
@@ -22,8 +20,15 @@ header {
 }
 h1 {
   font-family: monospace;
+  color: darkred;
+  
+
   font-weight: 1000;
   font-size: 50px;
+  border:solid 5px palevioletred;
+  border-radius: 30px;
+  background-color: pink ;
+  padding: 2%;
   
 }
 
@@ -32,7 +37,10 @@ h1 {
   border-radius: 90px;
   background-color: transparent;
   border: solid 5px palevioletred;
-  margin: 15px;
+  margin: 10px;
+  margin-top: 1px;
+  height: 100px;
+ 
 }
 
 button {
@@ -68,10 +76,6 @@ footer {
   background-color: pink;
 }
 
-main {
-
-}
-
 
 /* //Tables */
 table, tr, td {
@@ -94,11 +98,8 @@ table, tr, td {
   align-items: center;
   margin: 10px;
 }
-.soilText{
-  
-}
 
-img{
-  height: 100px;
-  margin:-5px;
+.soil img{
+  width:15%;
+
 }
