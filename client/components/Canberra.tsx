@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Weather } from '../models/Weather'
 import { getWeather } from '../apiClient'
 import SoilStack from './SoilStack'
+import interpretMoisture from '../function'
 
 export default function CanberraWeather() {
   const [weather, setWeather] = useState([] as Weather[])
@@ -50,11 +51,13 @@ export default function CanberraWeather() {
   return (
     <>
       <div>
+        <h4> Weather Report for Canberra: </h4>
         <table>
           <tr>
             <th>Depth</th>
             <th>Temperature</th>
             <th>Moisture</th>
+            <th>Description</th>
           </tr>
           <tr>
             <td>Shallow</td>
@@ -63,6 +66,9 @@ export default function CanberraWeather() {
             </td>
             <td>
               <b>{canberrawetnessShallow}</b>m³/m³
+            </td>
+            <td>
+              <b>{interpretMoisture(canberrawetnessShallow).words}</b>
             </td>
           </tr>
           <tr>
@@ -73,6 +79,9 @@ export default function CanberraWeather() {
             <td>
               <b>{canberrawetnessMid}</b>m³/m³
             </td>
+            <td>
+              <b>{interpretMoisture(canberrawetnessMid).words}</b>
+            </td>
           </tr>
           <tr>
             <td>Deep</td>
@@ -81,6 +90,9 @@ export default function CanberraWeather() {
             </td>
             <td>
               <b>{canberrawetnessDeep}</b>m³/m³
+            </td>
+            <td>
+              <b>{interpretMoisture(canberrawetnessDeep).words}</b>
             </td>
           </tr>
         </table>

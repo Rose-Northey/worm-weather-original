@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import HomePage from './components/HomePage'
 import Wellington from './components/Wellington'
 import Canberra from './components/Canberra'
+import Narnia from './components/Narnia'
 import SoilStack from './components/SoilStack'
 
 export default createRoutesFromElements(
@@ -10,6 +11,7 @@ export default createRoutesFromElements(
     <Route index element={<HomePage />} />
     <Route path="/cities/wellington" element={<Wellington />} />
     <Route path="/cities/canberra" element={<Canberra />} />
-    <Route path="/cities/soilStack" element={<SoilStack />}/>
+    <Route path="/cities/narnia" element={<Narnia />} />
+
   </Route>
 )
