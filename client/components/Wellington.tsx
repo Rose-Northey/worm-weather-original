@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Weather } from '../models/Weather'
 import { getWeather } from '../apiClient'
+import SoilStack from './SoilStack'
 
 export default function WellingtonWeather() {
   const [weather, setWeather] = useState([] as Weather[])
@@ -84,6 +85,7 @@ export default function WellingtonWeather() {
           </tr>
         </table>
       </div>
+      {SoilStack(wellywetnessShallow, wellywetnessMid, wellywetnessDeep)}
     </>
   )
 }

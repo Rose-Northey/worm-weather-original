@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Weather } from '../models/Weather'
 import { getWeather } from '../apiClient'
+import SoilStack from './SoilStack'
 
 export default function CanberraWeather() {
   const [weather, setWeather] = useState([] as Weather[])
@@ -84,6 +85,11 @@ export default function CanberraWeather() {
           </tr>
         </table>
       </div>
+      {SoilStack(
+        canberrawetnessShallow,
+        canberrawetnessMid,
+        canberrawetnessDeep
+      )}
     </>
   )
 }
