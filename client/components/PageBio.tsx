@@ -13,7 +13,12 @@ function PageBio() {
           text blah blah blah filler text blah blah blah filler text blah blah
           blah filler text blah blah blah filler text blah blah blah filler text
           blah blah blah filler text blah blah blah filler text blah blah blah
-          filler text someone write in me
+          filler text someone write in me blah blah blah filler text blah blah
+          blah filler text blah blah blah filler text blah blah blah filler text
+          blah blah blah filler text blah blah blah filler text blah blah blah
+          filler text blah blah blah filler text blah blah blah filler text blah
+          blah blah filler text blah blah blah filler text blah blah blah filler
+          text
         </p>
       </div>
     </>
