@@ -11,7 +11,7 @@ function PageBio() {
           {' '}
           Welcome to Weather for Worms! The wiggliest Weather Website you've
           ever witnessed, willing to Wow by welcoming the wonderfully wacky
-          weather word to your worm workplace.
+          weather to your worm workplace.
         </p>
       </div>
     </>
